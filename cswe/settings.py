@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'app1',
+    'app2',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -130,10 +132,10 @@ CELERY_TIMEZONE = 'Asia/Makassar'
 CELERY_BEAT_SCHEDULE = {
     'task-number-one': {
         'task': 'app1.tasks.task_number_one',
-        'schedule': 30.0,
+        'schedule': 30,
     },
     'task-number-two': {
         'task': 'app2.tasks.task_number_two',
-        'schedule': 33.0,
+        'schedule': 33,
     }
 }
